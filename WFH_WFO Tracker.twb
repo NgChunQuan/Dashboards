@@ -1,0 +1,1688 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20252.25.0514.2217                               -->
+<workbook original-version='18.1' source-build='2025.2.0 (20252.25.0514.2217)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='staff_earliest' inline='true' name='federated.1k7hqck0ez7g4s137iswa1bnfsdn' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='staff_earliest' name='textscan.0fxgaij0nmvxxh14pp3e81p3j40w'>
+            <connection class='textscan' directory='C:/Users/Chun Quan/Desktop/Data Analyst - MOM/Access_data' filename='staff_earliest.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0fxgaij0nmvxxh14pp3e81p3j40w' name='staff_earliest.csv' table='[staff_earliest#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='CardNum' ordinal='0' />
+            <column datatype='date' name='Date' ordinal='1' />
+            <column datatype='string' name='Site' ordinal='2' />
+            <column datatype='datetime' name='When' ordinal='3' />
+            <column datatype='integer' name='Profile' ordinal='4' />
+            <column datatype='string' name='Dept' ordinal='5' />
+            <column datatype='datetime' name='Time' ordinal='6' />
+            <column datatype='string' name='Slot' ordinal='7' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[staff_earliest.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CardNum</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[CardNum]</local-name>
+            <parent-name>[staff_earliest.csv]</parent-name>
+            <remote-alias>CardNum</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[staff_earliest.csv_E84F20949A4A4F8BA457A55B3CEC6264]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Date]</local-name>
+            <parent-name>[staff_earliest.csv]</parent-name>
+            <remote-alias>Date</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[staff_earliest.csv_E84F20949A4A4F8BA457A55B3CEC6264]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Site</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Site]</local-name>
+            <parent-name>[staff_earliest.csv]</parent-name>
+            <remote-alias>Site</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[staff_earliest.csv_E84F20949A4A4F8BA457A55B3CEC6264]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>When</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[When]</local-name>
+            <parent-name>[staff_earliest.csv]</parent-name>
+            <remote-alias>When</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[staff_earliest.csv_E84F20949A4A4F8BA457A55B3CEC6264]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Profile</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Profile]</local-name>
+            <parent-name>[staff_earliest.csv]</parent-name>
+            <remote-alias>Profile</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[staff_earliest.csv_E84F20949A4A4F8BA457A55B3CEC6264]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Dept</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Dept]</local-name>
+            <parent-name>[staff_earliest.csv]</parent-name>
+            <remote-alias>Dept</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[staff_earliest.csv_E84F20949A4A4F8BA457A55B3CEC6264]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Time</remote-name>
+            <remote-type>134</remote-type>
+            <local-name>[Time]</local-name>
+            <parent-name>[staff_earliest.csv]</parent-name>
+            <remote-alias>Time</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Hour</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[staff_earliest.csv_E84F20949A4A4F8BA457A55B3CEC6264]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Slot</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Slot]</local-name>
+            <parent-name>[staff_earliest.csv]</parent-name>
+            <remote-alias>Slot</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[staff_earliest.csv_E84F20949A4A4F8BA457A55B3CEC6264]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='% Staff WFH' datatype='real' name='[Calculation_1270296609604825089]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='1 - (COUNTD([CardNum]) / 2000)' />
+      </column>
+      <column caption='Card Num' datatype='integer' name='[CardNum]' role='measure' type='quantitative' />
+      <column datatype='date' name='[Date]' role='dimension' type='quantitative' />
+      <column datatype='string' name='[Site]' role='dimension' type='nominal' />
+      <column datatype='string' name='[Slot]' role='dimension' type='nominal' />
+      <column aggregation='Hour' datatype='datetime' name='[Time]' role='dimension' type='ordinal' />
+      <column caption='staff_earliest.csv' datatype='table' name='[__tableau_internal_object_id__].[staff_earliest.csv_E84F20949A4A4F8BA457A55B3CEC6264]' role='measure' type='quantitative' />
+      <column-instance column='[Site]' derivation='None' name='[none:Site:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Slot]' derivation='None' name='[none:Slot:nk]' pivot='key' type='nominal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/CHUNQU~1/AppData/Local/Temp/TableauTemp/#TableauTemp_1wgvc4v0ncwbos1fn2irn0inpvdp.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='08/07/2025 02:22:03 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>CardNum</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[CardNum]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>CardNum</remote-alias>
+              <ordinal>0</ordinal>
+              <family>staff_earliest.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1587</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[staff_earliest.csv_E84F20949A4A4F8BA457A55B3CEC6264]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Date</remote-alias>
+              <ordinal>1</ordinal>
+              <family>staff_earliest.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>70</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[staff_earliest.csv_E84F20949A4A4F8BA457A55B3CEC6264]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Site</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Site]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Site</remote-alias>
+              <ordinal>2</ordinal>
+              <family>staff_earliest.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[staff_earliest.csv_E84F20949A4A4F8BA457A55B3CEC6264]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>When</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[When]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>When</remote-alias>
+              <ordinal>3</ordinal>
+              <family>staff_earliest.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>5995</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[staff_earliest.csv_E84F20949A4A4F8BA457A55B3CEC6264]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Profile</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Profile]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Profile</remote-alias>
+              <ordinal>4</ordinal>
+              <family>staff_earliest.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[staff_earliest.csv_E84F20949A4A4F8BA457A55B3CEC6264]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Dept</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Dept]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Dept</remote-alias>
+              <ordinal>5</ordinal>
+              <family>staff_earliest.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>24</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[staff_earliest.csv_E84F20949A4A4F8BA457A55B3CEC6264]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Time</remote-name>
+              <remote-type>134</remote-type>
+              <local-name>[Time]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Time</remote-alias>
+              <ordinal>6</ordinal>
+              <family>staff_earliest.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Hour</aggregation>
+              <approx-count>273</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[staff_earliest.csv_E84F20949A4A4F8BA457A55B3CEC6264]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Slot</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Slot]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Slot</remote-alias>
+              <ordinal>7</ordinal>
+              <family>staff_earliest.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[staff_earliest.csv_E84F20949A4A4F8BA457A55B3CEC6264]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout common-percentage='1' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' user-set-layout-v2='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Slot:nk]' type='palette'>
+            <map to='#002a7b'>
+              <bucket>&quot;0700 to 0829&quot;</bucket>
+            </map>
+            <map to='#0056d2'>
+              <bucket>&quot;0830 to 0929&quot;</bucket>
+            </map>
+            <map to='#ff7300'>
+              <bucket>&quot;0930 to 1030&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Site:nk]' type='palette'>
+            <map to='#0056d2'>
+              <bucket>&quot;Site A&quot;</bucket>
+            </map>
+            <map to='#ff7300'>
+              <bucket>&quot;Site B&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Singapore&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='staff_earliest.csv' id='staff_earliest.csv_E84F20949A4A4F8BA457A55B3CEC6264'>
+            <properties context=''>
+              <relation connection='textscan.0fxgaij0nmvxxh14pp3e81p3j40w' name='staff_earliest.csv' table='[staff_earliest#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='CardNum' ordinal='0' />
+                  <column datatype='date' name='Date' ordinal='1' />
+                  <column datatype='string' name='Site' ordinal='2' />
+                  <column datatype='datetime' name='When' ordinal='3' />
+                  <column datatype='integer' name='Profile' ordinal='4' />
+                  <column datatype='string' name='Dept' ordinal='5' />
+                  <column datatype='datetime' name='Time' ordinal='6' />
+                  <column datatype='string' name='Slot' ordinal='7' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <shared-views>
+    <shared-view name='federated.1k7hqck0ez7g4s137iswa1bnfsdn'>
+      <datasources>
+        <datasource caption='staff_earliest' name='federated.1k7hqck0ez7g4s137iswa1bnfsdn' />
+      </datasources>
+      <datasource-dependencies datasource='federated.1k7hqck0ez7g4s137iswa1bnfsdn'>
+        <column datatype='date' name='[Date]' role='dimension' type='quantitative' />
+        <column datatype='string' name='[Dept]' role='dimension' type='nominal' />
+        <column datatype='string' name='[Site]' role='dimension' type='nominal' />
+        <column datatype='string' name='[Slot]' role='dimension' type='nominal' />
+        <column-instance column='[Date]' derivation='None' name='[none:Date:qk]' pivot='key' type='quantitative' />
+        <column-instance column='[Dept]' derivation='None' name='[none:Dept:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Site]' derivation='None' name='[none:Site:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Slot]' derivation='None' name='[none:Slot:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <filter class='quantitative' column='[federated.1k7hqck0ez7g4s137iswa1bnfsdn].[none:Date:qk]' included-values='in-range'>
+        <min>#2020-04-22#</min>
+        <max>#2020-04-22#</max>
+      </filter>
+      <filter class='categorical' column='[federated.1k7hqck0ez7g4s137iswa1bnfsdn].[none:Dept:nk]'>
+        <groupfilter function='level-members' level='[none:Dept:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+      </filter>
+      <filter class='categorical' column='[federated.1k7hqck0ez7g4s137iswa1bnfsdn].[none:Site:nk]'>
+        <groupfilter function='level-members' level='[none:Site:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+      </filter>
+      <filter class='categorical' column='[federated.1k7hqck0ez7g4s137iswa1bnfsdn].[none:Slot:nk]'>
+        <groupfilter function='level-members' level='[none:Slot:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+      </filter>
+    </shared-view>
+  </shared-views>
+  <worksheets>
+    <worksheet name='% of Staff Working from Home (WFH)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontsize='10'>% of Staff Working from Home (WFH)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='staff_earliest' name='federated.1k7hqck0ez7g4s137iswa1bnfsdn' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1k7hqck0ez7g4s137iswa1bnfsdn'>
+            <column caption='% Staff WFH' datatype='real' name='[Calculation_1270296609604825089]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='1 - (COUNTD([CardNum]) / 2000)' />
+            </column>
+            <column caption='Card Num' datatype='integer' name='[CardNum]' role='measure' type='quantitative' />
+            <column datatype='date' name='[Date]' role='dimension' type='quantitative' />
+            <column datatype='string' name='[Dept]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Site]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Slot]' role='dimension' type='nominal' />
+            <column-instance column='[Date]' derivation='None' name='[none:Date:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Dept]' derivation='None' name='[none:Dept:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Site]' derivation='None' name='[none:Site:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Slot]' derivation='None' name='[none:Slot:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_1270296609604825089]' derivation='User' name='[usr:Calculation_1270296609604825089:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.1k7hqck0ez7g4s137iswa1bnfsdn].[none:Site:nk]</column>
+            <column>[federated.1k7hqck0ez7g4s137iswa1bnfsdn].[none:Slot:nk]</column>
+            <column>[federated.1k7hqck0ez7g4s137iswa1bnfsdn].[none:Dept:nk]</column>
+            <column>[federated.1k7hqck0ez7g4s137iswa1bnfsdn].[none:Date:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.1k7hqck0ez7g4s137iswa1bnfsdn].[usr:Calculation_1270296609604825089:qk]' value='p0.0%' />
+            <format attr='color' value='#000000' />
+            <format attr='color' data-class='subtotal' value='#000000' />
+            <format attr='width' value='79' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='color' scope='cols' value='#000000' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='title' field='[federated.1k7hqck0ez7g4s137iswa1bnfsdn].[none:Slot:nk]' value='Slot'>
+              <formatted-text>
+                <run fontname='Tableau Book'>Slot</run>
+              </formatted-text>
+            </format>
+            <format attr='title' field='[federated.1k7hqck0ez7g4s137iswa1bnfsdn].[none:Site:nk]' value='Site'>
+              <formatted-text>
+                <run fontname='Tableau Book'>Site</run>
+              </formatted-text>
+            </format>
+            <format attr='title' field='[federated.1k7hqck0ez7g4s137iswa1bnfsdn].[none:Dept:nk]' value='Dept'>
+              <formatted-text>
+                <run fontname='Tableau Book'>Dept</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.1k7hqck0ez7g4s137iswa1bnfsdn].[usr:Calculation_1270296609604825089:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+                <format attr='text-orientation' value='0' />
+                <format attr='vertical-align' value='center' />
+                <format attr='wrap' value='off' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='size' value='1.5492265224456787' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{F788FF2E-4C0C-460C-A135-0E74B0E800D6}' />
+    </worksheet>
+    <worksheet name='Breakdown of Staff WFO by Timeslots'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontsize='10'>Breakdown of Staff WFO by Timeslots</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='staff_earliest' name='federated.1k7hqck0ez7g4s137iswa1bnfsdn' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1k7hqck0ez7g4s137iswa1bnfsdn'>
+            <column caption='Card Num' datatype='integer' name='[CardNum]' role='measure' type='quantitative' />
+            <column datatype='date' name='[Date]' role='dimension' type='quantitative' />
+            <column datatype='string' name='[Dept]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Site]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Slot]' role='dimension' type='nominal' />
+            <column-instance column='[Date]' derivation='None' name='[none:Date:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Dept]' derivation='None' name='[none:Dept:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Site]' derivation='None' name='[none:Site:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Slot]' derivation='None' name='[none:Slot:nk]' pivot='key' type='nominal' />
+            <column-instance column='[CardNum]' derivation='CountD' name='[pcto:ctd:CardNum:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.1k7hqck0ez7g4s137iswa1bnfsdn].[none:Site:nk]</column>
+            <column>[federated.1k7hqck0ez7g4s137iswa1bnfsdn].[none:Slot:nk]</column>
+            <column>[federated.1k7hqck0ez7g4s137iswa1bnfsdn].[none:Dept:nk]</column>
+            <column>[federated.1k7hqck0ez7g4s137iswa1bnfsdn].[none:Date:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.1k7hqck0ez7g4s137iswa1bnfsdn].[pcto:ctd:CardNum:qk]' value='p0.0%' />
+          </style-rule>
+          <style-rule element='caption'>
+            <format attr='background-color' value='#000000' />
+            <format attr='border-width' value='1' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#000000' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.1k7hqck0ez7g4s137iswa1bnfsdn].[none:Slot:nk]' value='Slot'>
+              <formatted-text>
+                <run fontname='Tableau Book' fontsize='8'>Slot</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='title' field='[federated.1k7hqck0ez7g4s137iswa1bnfsdn].[none:Slot:nk]' value='Slot'>
+              <formatted-text>
+                <run fontname='Tableau Book'>Slot</run>
+              </formatted-text>
+            </format>
+            <format attr='title' field='[federated.1k7hqck0ez7g4s137iswa1bnfsdn].[none:Date:qk]' value='Date'>
+              <formatted-text>
+                <run fontname='Tableau Book'>Date</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1k7hqck0ez7g4s137iswa1bnfsdn].[none:Slot:nk]' />
+              <wedge-size column='[federated.1k7hqck0ez7g4s137iswa1bnfsdn].[pcto:ctd:CardNum:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+                <format attr='text-orientation' value='0' />
+                <format attr='vertical-align' value='center' />
+                <format attr='wrap' value='off' />
+              </style-rule>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='user' />
+                <format attr='color' value='#000000' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='size' value='1' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+        <mark-labels>
+          <mark-label id='0' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1k7hqck0ez7g4s137iswa1bnfsdn].[none:Slot:nk]</field>
+                  <field>[federated.1k7hqck0ez7g4s137iswa1bnfsdn].[pcto:ctd:CardNum:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;0830 to 0929&quot;</value>
+                <value>0.6866754617414248</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='1' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1k7hqck0ez7g4s137iswa1bnfsdn].[none:Slot:nk]</field>
+                  <field>[federated.1k7hqck0ez7g4s137iswa1bnfsdn].[pcto:ctd:CardNum:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;0700 to 0829&quot;</value>
+                <value>0.57849604221635886</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='2' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1k7hqck0ez7g4s137iswa1bnfsdn].[none:Slot:nk]</field>
+                  <field>[federated.1k7hqck0ez7g4s137iswa1bnfsdn].[pcto:ctd:CardNum:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;0930 to 1030&quot;</value>
+                <value>0.47361477572559368</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+        </mark-labels>
+      </table>
+      <simple-id uuid='{6D6517F6-CF00-4A9A-943E-8ADE9794812C}' />
+    </worksheet>
+    <worksheet name='Count of Staff WFO by Dept'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontsize='9'>Count of Staff WFO by Dept</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='staff_earliest' name='federated.1k7hqck0ez7g4s137iswa1bnfsdn' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1k7hqck0ez7g4s137iswa1bnfsdn'>
+            <column caption='Card Num' datatype='integer' name='[CardNum]' role='measure' type='quantitative' />
+            <column datatype='date' name='[Date]' role='dimension' type='quantitative' />
+            <column datatype='string' name='[Dept]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Site]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Slot]' role='dimension' type='nominal' />
+            <column-instance column='[CardNum]' derivation='CountD' name='[ctd:CardNum:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date]' derivation='None' name='[none:Date:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Dept]' derivation='None' name='[none:Dept:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Site]' derivation='None' name='[none:Site:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Slot]' derivation='None' name='[none:Slot:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.1k7hqck0ez7g4s137iswa1bnfsdn].[none:Site:nk]</column>
+            <column>[federated.1k7hqck0ez7g4s137iswa1bnfsdn].[none:Slot:nk]</column>
+            <column>[federated.1k7hqck0ez7g4s137iswa1bnfsdn].[none:Dept:nk]</column>
+            <column>[federated.1k7hqck0ez7g4s137iswa1bnfsdn].[none:Date:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='color' data-class='subtotal' value='#000000' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='color' scope='rows' value='#000000' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1k7hqck0ez7g4s137iswa1bnfsdn].[ctd:CardNum:qk]' max='140' min='1' palette='orange_10_0' type='interpolated' />
+            <encoding attr='size-bar' field='[federated.1k7hqck0ez7g4s137iswa1bnfsdn].[ctd:CardNum:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <size column='[federated.1k7hqck0ez7g4s137iswa1bnfsdn].[ctd:CardNum:qk]' />
+              <color column='[federated.1k7hqck0ez7g4s137iswa1bnfsdn].[ctd:CardNum:qk]' />
+              <text column='[federated.1k7hqck0ez7g4s137iswa1bnfsdn].[none:Dept:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='cell'>
+                <format attr='wrap' value='on' />
+                <format attr='text-orientation' value='0' />
+                <format attr='text-align' value='center' />
+                <format attr='vertical-align' value='center' />
+              </style-rule>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='user' />
+                <format attr='font-style' value='normal' />
+                <format attr='font-weight' value='normal' />
+                <format attr='font-size' value='7' />
+                <format attr='color' value='#000000' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{484F967A-1B93-42CA-924D-D48CE2676AA2}' />
+    </worksheet>
+    <worksheet name='Count of Staff Working from Office (WFO) by Site'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontsize='10'>Count of Staff Working from Office (WFO) by Site</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='staff_earliest' name='federated.1k7hqck0ez7g4s137iswa1bnfsdn' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1k7hqck0ez7g4s137iswa1bnfsdn'>
+            <column caption='Card Num' datatype='integer' name='[CardNum]' role='measure' type='quantitative' />
+            <column datatype='date' name='[Date]' role='dimension' type='quantitative' />
+            <column datatype='string' name='[Dept]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Site]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Slot]' role='dimension' type='nominal' />
+            <column-instance column='[CardNum]' derivation='CountD' name='[ctd:CardNum:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date]' derivation='None' name='[none:Date:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Dept]' derivation='None' name='[none:Dept:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Site]' derivation='None' name='[none:Site:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Slot]' derivation='None' name='[none:Slot:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.1k7hqck0ez7g4s137iswa1bnfsdn].[none:Site:nk]</column>
+            <column>[federated.1k7hqck0ez7g4s137iswa1bnfsdn].[none:Slot:nk]</column>
+            <column>[federated.1k7hqck0ez7g4s137iswa1bnfsdn].[none:Dept:nk]</column>
+            <column>[federated.1k7hqck0ez7g4s137iswa1bnfsdn].[none:Date:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1k7hqck0ez7g4s137iswa1bnfsdn].[ctd:CardNum:qk]' scope='rows' value='' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='color' data-class='total' field='[federated.1k7hqck0ez7g4s137iswa1bnfsdn].[ctd:CardNum:qk]' value='#000000' />
+            <format attr='color' data-class='subtotal' scope='cols' value='#000000' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='total-label' data-class='total' field='[federated.1k7hqck0ez7g4s137iswa1bnfsdn].[none:Site:nk]' value='' />
+            <format attr='color' data-class='total' field='[federated.1k7hqck0ez7g4s137iswa1bnfsdn].[none:Site:nk]' value='#000000' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='color' scope='rows' value='#000000' />
+            <format attr='color' scope='cols' value='#000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='line-pattern-only' scope='cols' value='dotted' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='axis-title'>
+            <format attr='color' field='[federated.1k7hqck0ez7g4s137iswa1bnfsdn].[ctd:CardNum:qk]' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.1k7hqck0ez7g4s137iswa1bnfsdn].[none:Site:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+                <format attr='vertical-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+                <format attr='mark-color' value='#f28e2b' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1k7hqck0ez7g4s137iswa1bnfsdn].[ctd:CardNum:qk]</rows>
+        <cols>[federated.1k7hqck0ez7g4s137iswa1bnfsdn].[none:Site:nk]</cols>
+      </table>
+      <simple-id uuid='{9E13A1D0-A248-4329-BF42-5A91CA3D51E7}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='WFH/WFO Tracker'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#000000' fontsize='15'>WFH /WFO Tracker</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style />
+      <size sizing-mode='automatic' />
+      <datasources>
+        <datasource caption='staff_earliest' name='federated.1k7hqck0ez7g4s137iswa1bnfsdn' />
+      </datasources>
+      <datasource-dependencies datasource='federated.1k7hqck0ez7g4s137iswa1bnfsdn'>
+        <column datatype='date' name='[Date]' role='dimension' type='quantitative' />
+        <column datatype='string' name='[Dept]' role='dimension' type='nominal' />
+        <column datatype='string' name='[Site]' role='dimension' type='nominal' />
+        <column datatype='string' name='[Slot]' role='dimension' type='nominal' />
+        <column-instance column='[Date]' derivation='None' name='[none:Date:qk]' pivot='key' type='quantitative' />
+        <column-instance column='[Dept]' derivation='None' name='[none:Dept:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Site]' derivation='None' name='[none:Site:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Slot]' derivation='None' name='[none:Slot:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='97890' id='113' param='horz' type-v2='layout-flow' w='99150' x='425' y='1055'>
+            <zone h='97890' id='111' param='horz' type-v2='layout-flow' w='99150' x='425' y='1055'>
+              <zone h='97890' id='109' type-v2='layout-basic' w='99150' x='425' y='1055'>
+                <zone h='93011' id='98' param='horz' type-v2='layout-flow' w='99150' x='425' y='5934'>
+                  <zone h='93011' id='96' type-v2='layout-basic' w='99150' x='425' y='5934'>
+                    <zone h='93011' id='89' param='horz' type-v2='layout-flow' w='53728' x='425' y='5934'>
+                      <zone h='93011' id='86' param='horz' type-v2='layout-flow' w='53728' x='425' y='5934'>
+                        <zone h='93011' id='83' param='horz' type-v2='layout-flow' w='53728' x='425' y='5934'>
+                          <zone h='93011' id='80' param='horz' type-v2='layout-flow' w='53728' x='425' y='5934'>
+                            <zone h='93011' id='77' param='horz' type-v2='layout-flow' w='53728' x='425' y='5934'>
+                              <zone h='93011' id='74' param='horz' type-v2='layout-flow' w='53728' x='425' y='5934'>
+                                <zone h='93011' id='71' param='horz' type-v2='layout-flow' w='53728' x='425' y='5934'>
+                                  <zone h='93011' id='69' type-v2='layout-basic' w='53728' x='425' y='5934'>
+                                    <zone h='93011' id='67' param='horz' type-v2='layout-flow' w='53728' x='425' y='5934'>
+                                      <zone h='93011' id='64' param='horz' type-v2='layout-flow' w='53728' x='425' y='5934'>
+                                        <zone h='93011' id='61' param='horz' type-v2='layout-flow' w='53728' x='425' y='5934'>
+                                          <zone h='93011' id='59' type-v2='layout-basic' w='53728' x='425' y='5934'>
+                                            <zone h='93011' id='57' param='horz' type-v2='layout-flow' w='53728' x='425' y='5934'>
+                                              <zone h='93011' id='54' param='horz' type-v2='layout-flow' w='53728' x='425' y='5934'>
+                                                <zone h='93011' id='51' param='horz' type-v2='layout-flow' w='53728' x='425' y='5934'>
+                                                  <zone h='93011' id='49' type-v2='layout-basic' w='53728' x='425' y='5934'>
+                                                    <zone h='93011' id='47' param='horz' type-v2='layout-flow' w='53728' x='425' y='5934'>
+                                                      <zone h='93011' id='45' type-v2='layout-basic' w='53728' x='425' y='5934'>
+                                                        <zone h='91954' id='42' param='horz' type-v2='layout-flow' w='14319' x='425' y='5934'>
+                                                          <zone h='91954' id='35' param='horz' type-v2='layout-flow' w='14319' x='425' y='5934'>
+                                                            <zone h='91954' id='32' param='horz' type-v2='layout-flow' w='14319' x='425' y='5934'>
+                                                              <zone h='91954' id='25' param='horz' type-v2='layout-flow' w='14319' x='425' y='5934'>
+                                                                <zone h='91954' id='21' param='vert' type-v2='layout-flow' w='14319' x='425' y='5934'>
+                                                                  <zone h='91954' id='19' type-v2='layout-basic' w='14319' x='425' y='5934'>
+                                                                    <zone h='22213' id='38' mode='checklist' name='% of Staff Working from Home (WFH)' param='[federated.1k7hqck0ez7g4s137iswa1bnfsdn].[none:Slot:nk]' type-v2='filter' values='database' w='14319' x='425' y='15827'>
+                                                                      <zone-style>
+                                                                        <format attr='border-color' value='#000000' />
+                                                                        <format attr='border-style' value='none' />
+                                                                        <format attr='border-width' value='0' />
+                                                                        <format attr='margin' value='4' />
+                                                                      </zone-style>
+                                                                    </zone>
+                                                                    <zone fixed-size='124' h='17360' id='29' is-fixed='true' name='% of Staff Working from Home (WFH)' param='[federated.1k7hqck0ez7g4s137iswa1bnfsdn].[none:Site:nk]' type-v2='filter' values='database' w='14319' x='425' y='38040'>
+                                                                      <zone-style>
+                                                                        <format attr='border-color' value='#000000' />
+                                                                        <format attr='border-style' value='none' />
+                                                                        <format attr='border-width' value='0' />
+                                                                        <format attr='margin' value='4' />
+                                                                      </zone-style>
+                                                                    </zone>
+                                                                    <zone h='14647' id='39' mode='checkdropdown' name='% of Staff Working from Home (WFH)' param='[federated.1k7hqck0ez7g4s137iswa1bnfsdn].[none:Dept:nk]' type-v2='filter' values='database' w='14319' x='425' y='55400'>
+                                                                      <zone-style>
+                                                                        <format attr='border-color' value='#000000' />
+                                                                        <format attr='border-style' value='none' />
+                                                                        <format attr='border-width' value='0' />
+                                                                        <format attr='margin' value='4' />
+                                                                      </zone-style>
+                                                                    </zone>
+                                                                    <zone fixed-size='114' h='27841' id='15' is-fixed='true' name='% of Staff Working from Home (WFH)' w='14319' x='425' y='70047'>
+                                                                      <layout-cache type-h='fixed' type-w='cell' />
+                                                                      <zone-style>
+                                                                        <format attr='border-color' value='#000000' />
+                                                                        <format attr='border-style' value='none' />
+                                                                        <format attr='border-width' value='0' />
+                                                                        <format attr='margin' value='4' />
+                                                                      </zone-style>
+                                                                    </zone>
+                                                                    <zone h='9893' id='114' name='Breakdown of Staff WFO by Timeslots' param='[federated.1k7hqck0ez7g4s137iswa1bnfsdn].[none:Date:qk]' type-v2='filter' values='database' w='14319' x='425' y='5934'>
+                                                                      <zone-style>
+                                                                        <format attr='border-color' value='#000000' />
+                                                                        <format attr='border-style' value='none' />
+                                                                        <format attr='border-width' value='0' />
+                                                                        <format attr='margin' value='4' />
+                                                                      </zone-style>
+                                                                    </zone>
+                                                                  </zone>
+                                                                </zone>
+                                                              </zone>
+                                                            </zone>
+                                                          </zone>
+                                                        </zone>
+                                                        <zone h='54341' id='75' name='Count of Staff Working from Office (WFO) by Site' w='39409' x='14744' y='5934'>
+                                                          <zone-style>
+                                                            <format attr='border-color' value='#000000' />
+                                                            <format attr='border-style' value='none' />
+                                                            <format attr='border-width' value='0' />
+                                                            <format attr='margin' value='4' />
+                                                          </zone-style>
+                                                        </zone>
+                                                        <zone h='38670' id='84' name='Breakdown of Staff WFO by Timeslots' w='39409' x='14744' y='60275'>
+                                                          <zone-style>
+                                                            <format attr='border-color' value='#000000' />
+                                                            <format attr='border-style' value='none' />
+                                                            <format attr='border-width' value='0' />
+                                                            <format attr='margin' value='4' />
+                                                          </zone-style>
+                                                        </zone>
+                                                      </zone>
+                                                    </zone>
+                                                  </zone>
+                                                </zone>
+                                              </zone>
+                                            </zone>
+                                          </zone>
+                                        </zone>
+                                      </zone>
+                                    </zone>
+                                  </zone>
+                                </zone>
+                              </zone>
+                            </zone>
+                          </zone>
+                        </zone>
+                      </zone>
+                    </zone>
+                    <zone h='93011' id='95' name='Count of Staff WFO by Dept' w='45422' x='54153' y='5934'>
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                  </zone>
+                </zone>
+                <zone fixed-size='35' h='4879' id='22' is-fixed='true' type-v2='title' w='99150' x='425' y='1055'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='13325' id='87' name='Breakdown of Staff WFO by Timeslots' pane-specification-id='0' param='[federated.1k7hqck0ez7g4s137iswa1bnfsdn].[none:Slot:nk]' type-v2='color' w='8922' x='43247' y='71504' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run bold='true' fontalignment='1' fontcolor='#000000' fontsize='15'>WFH /WFO Tracker</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='1500' minheight='1500' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='134' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97890' id='133' param='vert' type-v2='layout-flow' w='99150' x='425' y='1055'>
+                <zone fixed-size='35' h='4879' id='22' type-v2='title' w='99150' x='425' y='1055'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='54341' id='75' is-fixed='true' name='Count of Staff Working from Office (WFO) by Site' w='39409' x='14744' y='5934'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='93011' id='95' is-fixed='true' name='Count of Staff WFO by Dept' w='45422' x='54153' y='5934'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='9893' id='114' name='Breakdown of Staff WFO by Timeslots' param='[federated.1k7hqck0ez7g4s137iswa1bnfsdn].[none:Date:qk]' type-v2='filter' values='database' w='14319' x='425' y='5934'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='38670' id='84' is-fixed='true' name='Breakdown of Staff WFO by Timeslots' w='39409' x='14744' y='60275'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='13325' id='87' name='Breakdown of Staff WFO by Timeslots' pane-specification-id='0' param='[federated.1k7hqck0ez7g4s137iswa1bnfsdn].[none:Slot:nk]' type-v2='color' w='8922' x='43247' y='71504'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='22213' id='38' mode='checkdropdown' name='% of Staff Working from Home (WFH)' param='[federated.1k7hqck0ez7g4s137iswa1bnfsdn].[none:Slot:nk]' type-v2='filter' values='database' w='14319' x='425' y='15827'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='124' h='17360' id='29' mode='checkdropdown' name='% of Staff Working from Home (WFH)' param='[federated.1k7hqck0ez7g4s137iswa1bnfsdn].[none:Site:nk]' type-v2='filter' values='database' w='14319' x='425' y='38040'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='14647' id='39' mode='checkdropdown' name='% of Staff Working from Home (WFH)' param='[federated.1k7hqck0ez7g4s137iswa1bnfsdn].[none:Dept:nk]' type-v2='filter' values='database' w='14319' x='425' y='55400'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='215' h='27841' id='15' is-fixed='true' name='% of Staff Working from Home (WFH)' w='14319' x='425' y='70047'>
+                  <layout-cache type-h='fixed' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{F48E46E0-A63F-403B-A037-57026AAB5BA8}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.5' show-side-pane='false' source-height='44'>
+    <window class='worksheet' name='% of Staff Working from Home (WFH)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1k7hqck0ez7g4s137iswa1bnfsdn].[none:Site:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1k7hqck0ez7g4s137iswa1bnfsdn].[md:Date:ok]</field>
+            <field>[federated.1k7hqck0ez7g4s137iswa1bnfsdn].[none:Dept:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{C85D7680-85C4-4FA8-A5B9-72064A2FEEA8}' />
+    </window>
+    <window class='worksheet' name='Breakdown of Staff WFO by Timeslots'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1k7hqck0ez7g4s137iswa1bnfsdn].[none:Slot:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1k7hqck0ez7g4s137iswa1bnfsdn].[md:Date:ok]</field>
+            <field>[federated.1k7hqck0ez7g4s137iswa1bnfsdn].[none:Date:qk]</field>
+            <field>[federated.1k7hqck0ez7g4s137iswa1bnfsdn].[none:Site:nk]</field>
+            <field>[federated.1k7hqck0ez7g4s137iswa1bnfsdn].[none:Slot:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{1795C52A-694F-4F67-AEE8-F8AEF3B5D79B}' />
+    </window>
+    <window class='worksheet' name='Count of Staff Working from Office (WFO) by Site'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1k7hqck0ez7g4s137iswa1bnfsdn].[none:Site:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1k7hqck0ez7g4s137iswa1bnfsdn].[none:CardNum:ok]</field>
+            <field>[federated.1k7hqck0ez7g4s137iswa1bnfsdn].[none:Site:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{15400B4E-7949-4053-A174-5266BD8C5AC1}' />
+    </window>
+    <window class='worksheet' name='Count of Staff WFO by Dept'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1k7hqck0ez7g4s137iswa1bnfsdn].[ctd:CardNum:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1k7hqck0ez7g4s137iswa1bnfsdn].[ctd:CardNum:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{38C50951-931A-4E78-B661-8E611ACCDEAC}' />
+    </window>
+    <window class='dashboard' maximized='true' name='WFH/WFO Tracker'>
+      <viewpoints>
+        <viewpoint name='% of Staff Working from Home (WFH)'>
+          <zoom type='fit-width' />
+        </viewpoint>
+        <viewpoint name='Breakdown of Staff WFO by Timeslots'>
+          <zoom type='entire-view' />
+          <highlight field='[federated.1k7hqck0ez7g4s137iswa1bnfsdn].[none:Slot:nk]'>
+            <bucket-selection />
+          </highlight>
+        </viewpoint>
+        <viewpoint name='Count of Staff WFO by Dept' />
+        <viewpoint name='Count of Staff Working from Office (WFO) by Site'>
+          <zoom type='entire-view' />
+          <highlight>
+            <color-one-way>
+              <field>[federated.1k7hqck0ez7g4s137iswa1bnfsdn].[none:Site:nk]</field>
+            </color-one-way>
+          </highlight>
+        </viewpoint>
+      </viewpoints>
+      <active id='22' />
+      <simple-id uuid='{2C5B051B-3800-4706-B6E3-379B5C34A236}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='29' name='% of Staff Working from Home (WFH)' width='83'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Breakdown of Staff WFO by Timeslots' width='192'>
+      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
+      agpArPa/5i5TU2z78GkAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Count of Staff WFO by Dept' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABYlAAAWJQFJUiTw
+      AAAHEElEQVR4nO3dbW9bZx3H8d91zrGP7ThOnLsmTdJlTkvH1i3dug2kIg3Yg208g9fAk70H
+      3hYIIQ2QuNGoplWFqoyWJS1t07TOTZ3Yju/OuXiQJaUzKBOIuPH/+3kU+yTSX9H5+rp8p+O8
+      916AUcGgBwAGiQBgGgHAtOjrd/z6Zx9r9+G9QcyCIfbWTz7UmcKLd171BVC7v6ana3cGMQuG
+      WGfnsnzvxQuALRBMIwCYRgAwjQBgGgHANAKAaQQA0wgAphEATCMAmEYAMI0AYBoBwDQCgGkE
+      ANMIAKYRAEwjAJhGADCNAGAaAcA0AoBpBADTCACmEQBMIwCYRgAwjQBgGgHANAKAaQQA0wgA
+      phEATCMAmEYAONV6SarVjbq29tr6T5e8Tv/l/o2dlu5Xm0e/23eNMOA0qdba+vt6XamXrpwf
+      1069q1IhknNO1Vpb85N5fXLjsd67NKOJ0ayqtbbuPWlobCSjUiFDADj9Fqbymi3n9IdbW2q0
+      e+r0Us2MxbpcKev66lOFgVMhDhUGTtlMoHwcqZg/OPXZAuHUu3lvV7+/tamLC6NKUq/luaI6
+      vVRrjxsq5Q9Wg6eNrlrdRD+/tq5CHKqXsAXCEDgzntNHb88qGwXKRoHmJnIKnNOnX2zp1cWS
+      RvORXjs3JkmKo0A//aAiJykKnSQCwCkXBE6j+czR7cOff/DGjILg4CTPx+HR8VIh8/zfn8CM
+      wIk7PPmP/b3/8xzAC40AYBoBwDQCgGkEANMIAKYRAEwjAJhGADCNAGAaAcA0AoBpBADTCACm
+      EQBMIwCYRgAwjQBgGgHANAKAaQQA0wgAphEATCMAmEYAMI0AYBoBwDQCgGkEANMIAKYRAEwj
+      AJhGADCNAGAaAcA0AoBpBADTCACmEQBM40LZOBFuZEbRuYVBj9GHAHAyWrvS5sagp+jDFgim
+      EQBMIwCYRgAwjQBgGgEco5t67XUT9VL/b4977+X9s2OJ9+ok6UmNh/8RL4MeY22vrcR7tZJU
+      l8p5bbcTTcShmr1UncQrEzptNLtaLuUUBU63ay21klRvTo4MenR8AwRwjMhJiyOxHjY7urmz
+      r0IUaKPZUdd7TcSROu2DOCSv6n5P2cCplRysDM65QY+PY7AFOkbipfVmR3vd5KuT22syl1Hq
+      pU7iVcqGcnJKvZQJnOIwUL2bDHpsfEOsAMc4V8yq0Ut1rhgrcFKtkygfBqq2ujpbyGg0E6oQ
+      BQqcUzmOVI6lmVzEo/8pQQDHiMNAcfhsoZyII3nv9Xq5oCg4OMnHs8//G7MhC+tpQQD/Beec
+      Ih7ghwIPVTCNADCUNnaa+sWf7ulBtf7c+zSHvPfq9hK2QBhO61sNvfvtM/rsb08UBE5frte0
+      NFvSw826mu2eFqeL+uTzB6wAGF5O0vR4Xr/7y7rq+119fqeq+n5XK5UpbWw39cbyFAFgOIWB
+      029vPNT2bkuXl6cUBk6vLI7rQbWhP97a0Pn5MT3aarAFwnBaqUxppTJ1dPv8/LgCJ+02u7py
+      YVpB4PTjqxUCgA3hV+/ZvHNx5ui+IHBsgWAbAcA0AoBpBADTCACmEQBMIwCYRgAwjQBgGgHA
+      NAKAaQQA0wgAphEATCMAmEYAMI0AYBoBwDS+EokT4eKiXPnCoMfoQwA4Eb7Xkm/UBj1GHwLA
+      yUgTqdcc9BR9eA4A0wgAphEATCMAmEYAMI0AYBoBwDQCgGkEANMIAKYRAEwjAJjGh+EwlG7e
+      3dLt+zsaL8b6/sqCOr1EcSaU91Knl8g5p0fbXCMMQ6rTTfTeyoJWH9V07YvH6iWpoijQ+mZd
+      o4WsSoWsbqxusgXCMPPabXT0aLuh3WZHgZNKhViXliaVeq/XXpogAAynM+WCPr21oaXZkt5/
+      a1G5bKiJ0ZzuV/d0+8FTXbkwI+95DoAhNT9V1PxU8ej2D99clCSN5DKamxyRJH3v9bOsALDl
+      8OQ/RAAwjQBgGgHANAKAaQQA0wgAphEATCMAmEYAMI0AYBoBwDQCgGkEANMIAKYRAEwjAJhG
+      ADCNr0TiRLhcWW52cdBj9CEAnIx2TaquDXqKPmyBYBoBwDQCgGkEANMIAKYRAEwjAJhGADCN
+      N8IwdH5z/R9qtnp65aUJVebG+o4/rbeVy0bKZUMCwPBJUq8fffdl/fLaXW3vtbSz19K3Fsq6
+      fueJgsApG4VK0lQfvLNEABhO3kup9/rr3S3NTY5os7av+amiGu2exkdizU6MKBOFPAfA8MnH
+      kX712V2tLE/r7YuzCoJAk6W8/rxaVSYMVJkb040vn6jTTVgBMHyuXpp/dmNaenVpUu1OTx99
+      p3J00YwP331ZEq8CwYg4Gz13xZhDBADTCACmEQBMIwCYRgAwjQBgGgHANAKAaQQA0wgAphEA
+      TCMAmNb3adCzV65qbLEyiFkwxAqLF6Wx+qDH6PNPJD2urGTrybQAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Count of Staff Working from Office (WFO) by Site' width='164'>
+      iVBORw0KGgoAAAANSUhEUgAAAKQAAADACAYAAACK0MgNAAAACXBIWXMAABYlAAAWJQFJUiTw
+      AAAL6klEQVR4nO3df1CUBR7H8Q8NTcqPlMQDBBn1BMEygwREMbtM8Uwlj6wUi4tS7hILtehi
+      76IyrLm8i5Q6XeewQvMHFeLdiYkc4VGaSYRYIHBCHSQcl4hrwBzP3N4f/Np9eIAFl+Hr+nnN
+      +Efs47LOvOdZdpeej53RaDSCSIgbhvsBEJlikCQKgyRRGCSJwiBJFAZJojBIEuWaD7K5uXm4
+      HwJZ0TUfJNkWBkmiMEgShUGSKAySRGGQJAqDJFEYJInCIEkUBkmiMEgShUGSKAySRGGQJAqD
+      JFEYJInCIEkUBkmiMEgShUGSKAySRGGQJAqDJFEYJInCIEkUBkmiMEgSxX64HwBZ0TN2w/0I
+      Bm6L+SXueYYkURgkicIgSRQGSaIwSBJFUJAKrly6AmW4HwYNqwEE2YrzH2/GymBvuNjZwc7O
+      Do7uAViSfAwNfVZkQM6zwfD398cDadUatzfiVMpK3OZyI5xdnHGjozvm6Pq7T7JVFgZZifRl
+      frjzhSoEbzqCqhYjjMY21B9/DbcejUBQYkGvZzalYBNWfxyOB4LK8P1l9VEKylLux89SbsDz
+      hS0wGo1oq87EvQURCIrPgeFq/mV0TbIwyCo03bEX5Z/uRHz4VIweAQD2cPINx2vvvwHf19Nw
+      WKtIpQCJq47gsXeTMGukxu2GLLyia0RC5juImjQCAGA/NhRJB9Mwc9dGbCsZ5L+KrlkWBjkf
+      cUmhGKv1uY6bO7zQjJYW9Q0KipKfxIEH34YuQPsDIcPhDOyZHYcn1Le7RCJ61T/x19xKyx4e
+      2YyrfFGjoGH/+9g//x6EOatuKUpG9K6F2L05rNfPJ4sL8zFldhA8e9xij7B7luDEmW/4Iuc6
+      cxWfZbfirH4FFq+/iOTCGPOolDKkrN2Fu3aWIKyP72BoqoObt4vmbc43jwLKzqMawOTBP0i6
+      xgwqSKXhBFLXrIDu28XYW5qBpd6md6OgLCUGqYE7UTLfudf76OT30wkWf1+OJNm+AQapoOFY
+      EhYvfxuIfhelGUvhrboHpSwVsfpp+NPn89F/jkDNhXoAbhZ9dwcHhx5fY6S2ZQBBKihLW46F
+      6y7isWPl0IWO1fjLldgeq8Pl+dvw3+NZyDK55ctq4KJyDFlZXwOeQYiYMQ7Oo9zx74uN0ApS
+      aWsDvD0sTJVshcVBKgWJWLjuIuILcxHv19tfa4bz9McxB18hN9f8lurvgaaWE8jNHQXcORER
+      M8bBxy8Qp48WwwC/HmfTkwXZmOK/zqKzLNkOO6PRaOz/sFroF/ji74/XYN9D2i9C+pMda4dN
+      /hX4LN7kJUqtHgu8PsADNUexxvRVkZKPDeOjMfJgNZJD+r7f5uZmzafy69J18wu69R8jK2cJ
+      li0aXIy98ozBC8+WY/3KLTjb2vE1pQGH1kZjR+ALeLKfGMn2WBak4TIasR8P39z+GXbPP7OQ
+      Mqj3sO0RtvkItv1EjxAPb/j7+8PHawKiz69B3u4YjfcnydZZ+JQ91BRc+U85ij79AWNmB8DX
+      1cniH275lG3CBp6yhfxPXvZwcp2KORHD/ThouAn6fUgiBknCMEgShUGSKAySRGGQJAqDJFEY
+      JInCIEkUBkmiMEgShUGSKAySRGGQJAqDJFEYJInCIEkUBkmiMEgShUGSKAySRGGQJAqDJFEY
+      JInCIEkUBkmiMEgShUGSKIKC5NYhDdXWodKA4j3xmOfjDseOY12852H17rNo7XG/3Dqkbtbf
+      OjQUQBfsi+XpjojZ9wXq24wwGlvwTebDaPltCCLTak3ul1uHZM7CC5bmIPUlJzyk05iXq9Vj
+      gddJxLWlYak9gMp0bP58NjZETcII1aFK/gaMf2Yc8r54Bn4AYPgQq9xfgk/Bl0gynZdr3I+H
+      vZJx+8kzSJzW9yPjBUtN2MAFS62/dTj5ESRqxAgA9m7j4GX4EZ2HcuuQ1IZs67CnVpza8x5q
+      Ft2NzpMetw5JbWi2DtWUBhxLDEfEgVB8UDS365ty65DUBnWGVBpOIGWZH0K2e2JraV9DSkDr
+      +UzEBU/AExWPIq9oB36u6m+gW4fqP2RbrL512K0VZ/WP4BfPFWN6Uh6K4oOhdS7k1iGZsvLW
+      YadG5CfMw6IDU6EvPIOoSVovccCtQ+rB4qds063DpD5jBGrTVmHRgSB8ULS71xgBtG8dni7W
+      fL+xfevQl1uH1xkLg6xF2stvYWbawT5/XgQAKPn4g+5fSMh8q8fPi2pu4RGYv//P2FurukHJ
+      x0fpNyFyYYBlD49shvW3Dk/+DXtHRWKp+r1FLdw6JBXrbx0amlB37kUEah5nBzu7WGR33TG3
+      Dskctw5tiQ18dMitQxJF0O9DEjFIEoZBkigMkkRhkCQKgyRRGCSJwiBJFAZJojBIEoVBkigM
+      kkRhkCQKgyRRGCSJwiBJFAZJojBIEoVBkigMkkRhkCQKgyRRGCSJwiBJFAZJojBIEoVBkihD
+      HmTrpUsa611aOC1HQzUtBwXfHYrHHHdHjHRxwUg7F9y2Ut99DUgznJajbtaflgPQmL0Wd60o
+      wr2Z1WgzGmFsKcTzN2xGSHgqzKeQOC1H5qw/LYcSbL59Js7oarDvIZMr7ipFeCkwDBVJddgd
+      2XHlcE7LWZcNXB/S+tNyRR/hvYZY/DpSdfln+wBExUxH5tHusymn5UjN6tNy9UWncG5uCAI1
+      4p08Nxzjv/y662mb03KkdhVBtuKsfjmC1lxA8tbu64EbLjfCwfUW7TkP51G45XQFqjqPbaqD
+      25j+p+Xo+jGoSzorDSeQumYFdN8uxt7SDCxVzXlNnzzR4vsa6LQc2bYhmZar+r4Olk5mclqO
+      TFl9Ws75ZhfUnbkIRevOFQVtU8bBvfNYTsuRitWn5dx8b4X7Z0Uo0bit/rM8nL7Dr+vcyWk5
+      UrP+tNzM+7CiaTvS89Wvj2uRte8T3H/f3V2RcVqO1Kw/LWc/FxuTA7Ejei0OdX3+14qzW1Zi
+      fflabFxh8iTMaTlSsf60HADPmN04HPUVoid4wcffH/7eHgjRT0La8c0IMzvBclqOzA3ptFzr
+      pSp8faoC8AnGrRNHo/ehYk7LWYUNfHQoZOtw8BikCRsIkr+gS6IwSBKFQZIoDJJEYZAkCoMk
+      URgkicIgSRQGSaIwSBKFQZIoDJJEYZAkCoMkURgkicIgSRQGSaIwSBKFQZIoDJJEYZAkCoMk
+      URgkicIgSRQGSaIwSBKFQZIogoLktBwNJkilASf0qxHiEovs3o5pPY9M3RIEuDt2XK7PBd7z
+      VkN/qlHjYE7LUbeBbR1mxmOOly+WpZ9B86XejqtEavg0rP9mHt4s+gFGoxHGliocibsJ238W
+      gLgc0ws4c1qOzFkcZE7cGNz52o94JLMcNf94EbN6O7BAj+TyWLybEY+7PDquCDliNKYuS8Vf
+      3vDFWykZqO881pCFV3SNSMh8B1GT2o+1HxuKpINpmLlrI7ZpXaicbJrFKwwzdJW44OHRx0VH
+      OxiaUDfRH54a9+w5fiLQeBkGtO8udE7L1WhOy8VgU24lEqdZNi9CtsHiM6SLJTECQNgCRBUf
+      wMEy9Q+BjTiUcQihDy7uWmHgtBypDWrJq0/OkdiWdw4PLpiNcxuexqMLQuFQcwwf/fFNZHmk
+      4HBc9xnP0FQHN+/+p+V4jrx+WD9IAC6Bq/HycxVY9/pvULDDEVAa8b9pT2Pr7yJ6LH9xWo5M
+      Wf99SKUMKfNm4/c3Po1PKr9DaWkpSivqULzFG/uWzkBctvlbP+3TcpZxcHDo8Ydsi9WDrE17
+      Crrxr+K9NXfAyeRsOGJSFHamL8fxmFdR0PG17mm5njgtd32yepBnCnMwfcZ0zUk4+4BghNYV
+      4HTHpg2n5UjN6kG6j5uCqu9qtV8dlxThhMM0TJnQ/p+cliM1qwcZ8EQCAndE45d7ynHFpMrW
+      C0eQEJ0MJPwK8zufyjktRyoWBpmNWLMpuUXQQ49FJl+b1bkt5xmDD0vegOvWEDiPbZ+L8/dx
+      x5jJT6Hq0TzkJwWYvLTntByZG+JpuTpcagUAezi5upq9yDHHaTmrsIElryF5H7LTiNHuXWPt
+      fbOHk+tUzIkYykdD1wJBvw9JxCBJGAZJojBIEuX/+yLrYlEfHW0AAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='WFH/WFO Tracker' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
